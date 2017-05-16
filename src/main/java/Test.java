@@ -10,12 +10,9 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("This is println message.");
-        try {
-            logger.debug("main");
-            int i = 1 / 0;
-        } catch (Exception e) {
-            logger.info(e.getMessage());
-        }
+
+        logger.debug("This is debug message.");
+        logger.info("This is info message.");
+        logger.error("This is error message.");
     }
 }
